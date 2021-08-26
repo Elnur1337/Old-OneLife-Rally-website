@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+header {
+  background-color: black;
+  display: flex;
+  width: 100vw;
+  height: 8vh;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+  word-spacing: 2%;
+  min-height: 74.96px;
+  min-width: 74.96px;
+  position: fixed;
+}
+#header_logo_link {
+  margin-right: auto;
+  margin-left: 1%;
+  height: 60%;
+}
+#header_logo {
+  height: 100%;
+}
+#header_apply {
+  margin-right: 2%;
+  border: 0;
+  padding-right: 1%;
+  padding-left: 1%;
+  margin-left: 5px;
+  height: 60%;
+  border-radius: 5%;
+  background-color: #d39327;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+#nav_links > li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 0.8vh;
+}
+#nav_links > li > a {
+  color: white;
+  text-decoration: none;
+  font-size: 110%;
+  transition: 0.3s ease;
+}
+header > a > button {
+  color: black;
+  text-decoration: none;
+  font-size: 110%;
+}
+header > a {
+  margin-right: 2%;
+}
+#contact_fix {
+  margin-right: 1%;
+}
+#nav_links > li > a:hover {
+  color: #d39327;
+}
+#header_apply:hover {
+  background-color: #a26f1f;
+  border-radius: 0;
+}
+#after_header {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url(./img/2018.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  text-align: center;
+}
+#from_to {
+  font-size: 2rem;
+  font-weight: bold;
+}
+#from_to_date {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+#timer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.part_of_timer:not(:last-child) {
+  margin-right: 15%;
+}
+.part_of_timer {
+  margin-top: 10%;
+  font-size: 5rem;
+  font-weight: bold;
+}
+#seconds {
+  color: #d39327;
+}
+.apply_btn {
+  background-color: #d39327;
+  border: 0;
+  border-radius: 5%;
+  height: 50px;
+  width: 200px;
+  margin-top: 4%;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+}
+#after_header > a {
+  margin: 5vh;
+}
+.apply_btn:hover {
+  background-color: #a26f1f;
+  border-radius: 0;
+}
+#philo {
+  width: 100vw;
+  height: 15vh;
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0.4) 100%
+    ),
+    url(./img/philopic.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#philo_text {
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-style: italic;
+  color: rgb(40, 40, 40);
+}
+#ruta {
+  width: 100vw;
+  height: 90vh;
+  background-image: url(./img/ruta.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#partners {
+  width: 100vw;
+  height: 60vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+#partners > h3 {
+  color: #d39327;
+  font-size: 2vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: 2%;
+}
+#partners_container {
+  width: 100%;
+  height: 60%;
+  color: white;
+  display: grid;
+  margin-left: 2%;
+  margin-right: 2%;
+  grid-template-columns: repeat(4, 23%);
+  grid-template-rows: 60%;
+  grid-gap: 1%;
+}
+#villa_diamond > a > img {
+  width: 100%;
+  height: auto;
+}
+#vitaly > a > img {
+  width: 100%;
+  height: auto;
+}
+#villa_diamond_text > h3 > a,
+#vitaly_text > h3 > a {
+  font-size: 3vh;
+  text-decoration: none;
+  color: white;
+}
+#villa_diamond_text > p,
+#vitaly_text > p {
+  font-size: 1.8vh;
+  overflow: hidden;
+}
+#firms {
+  display: flex;
+  width: 97vw;
+  height: 40%;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.firms_alone {
+  width: 12.5%;
+}
+.firms_alone > img {
+  width: 100%;
+}
+.firms_alone:not(:last-child) {
+  margin-right: 2%;
+}
+footer {
+  width: 100vw;
+  height: 8vh;
+  background-color: rgb(16, 16, 16);
+  color: rgb(202, 202, 202);
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+footer > p {
+  font-size: 1.5vh;
+}
+footer > ul {
+  list-style-type: none;
+}
+footer > ul > li {
+  display: inline-block;
+  font-size: 2.5vh;
+  margin-right: 0.5vw;
+}
+footer > ul > li > a {
+  text-decoration: none;
+  color: rgb(202, 202, 202);
+}
+#shop_gallery {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 9.5vh;
+}
+.shop_container {
+  margin-top: 5%;
+  margin-bottom: -8vh;
+  display: flex;
+  justify-content: center;
+}
+.product {
+  width: 33.33%;
+  max-width: 250px;
+  text-align: center;
+}
+.product > img {
+  width: 100%;
+}
+.product > p {
+  margin-top: 0.5vh;
+}
+.product:not(:last-child) {
+  margin-right: 1vw;
+}
+.product > img:hover {
+  cursor: pointer;
+}
+#contact {
+  width: 100vw;
+  height: 92vh;
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url(./img/contact_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2.4vh;
+}
+.column_first {
+  margin-right: 2%;
+}
+input {
+  margin-bottom: 1.5vh;
+  border: 0;
+  width: 25vw;
+  height: 4vh;
+  font-size: 2vh;
+  text-indent: 0.4vw;
+}
+#contact > .column > form > p {
+  margin-bottom: 0.6vh;
+}
+::placeholder {
+  font-size: 1.7vh;
+  text-indent: 0.4vw;
+}
+#contact > .column > form > textarea {
+  margin-bottom: 1.5vh;
+  border: 0;
+  width: 25vw;
+  height: 13.7vh;
+  font-size: 2vh;
+  text-indent: 0.4vw;
+  padding-top: 0.5vh;
+}
+textarea::placeholder {
+  font-size: 2vh;
+  text-indent: 0.4vw;
+}
+.contact-input-fix {
+  margin-bottom: 1.9vh;
+}
+.contact-input-fix-second {
+  margin-bottom: 1.9vh;
+}
+#apply_main {
+  width: 100vw;
+  height: 92vh;
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url(./img/apply_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4vh;
+}
+.form-container {
+  display: flex;
+  margin-top: 10vh;
+}
+::-webkit-datetime-edit-text {
+  color: rgb(117, 117, 117);
+  font-style: italic;
+}
+::-webkit-datetime-edit-month-field {
+  color: rgb(117, 117, 117);
+  font-style: italic;
+}
+::-webkit-datetime-edit-day-field {
+  color: rgb(117, 117, 117);
+  font-style: italic;
+}
+::-webkit-datetime-edit-year-field {
+  color: rgb(117, 117, 117);
+  font-style: italic;
+}
+select {
+  margin-bottom: 1.5vh;
+  border: 0;
+  width: 25vw;
+  height: 4vh;
+  font-size: 2vh;
+  text-indent: 0.4vw;
+  color: rgb(117, 117, 117);
+}
+select option {
+  color: rgb(117, 117, 117);
+  font-size: 2vh;
+}
+.margin-apply-fix {
+  margin-bottom: 0;
+}
